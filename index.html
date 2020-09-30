@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animacion</title>
+	<style type="text/css">
+		.boton{
+			   text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 6px;
+    border: 2px solid #000000;
+    position: absolute;
+    top: 600px;
+    left: 400px;
+  
+		}
+				.boton1{
+			   text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 6px;
+    border: 2px solid #000000;
+    position: absolute;
+    top: 600px;
+    left: 600px;
+  
+		}
+		.c1{
+		
+            position: absolute;
+            top: 1%;
+            left: 1%;
+			height: 90%;
+			width: 90%;
+				background-repeat: no-repeat;
+	background-size: 1500px 689px;
+					}
+
+		.c2{
+			background-image: url(gif.gif);
+            position: absolute;
+            top: 10%;
+            left: 10%;
+			height: 90%;
+			width: 90%;
+
+					}
+					.Ti{
+						            position: absolute;
+            top: 520px;
+            left: 27%;
+
+					}
+	</style>
+	<script type="text/javascript">
+		function im() {
+			var f2=document.getElementById('img').src="gif.gif";
+            document.getElementById('player1').play();
+		}
+	function p() {
+			document.getElementById('player1').pause();
+			var f2=document.getElementById('img').src="cp.png";
+		}
+	</script>
+</head>
+<body bgcolor="#55a7ff">
+<button onclick="im();" class="boton">INICIAR</button>
+<button onclick="p();" class="boton1">PAUSAR</button>
+	<div  class="c1"><img src="cp.png"id="img" width="1300px" height="500px"></div>
+	<div class="Ti"><font size="50px"> Pinguino Bailando</font></div>
+	<audio  id="player1"  src="gb.mp3" autoplay preload  loop>
+</body>
+</html>
